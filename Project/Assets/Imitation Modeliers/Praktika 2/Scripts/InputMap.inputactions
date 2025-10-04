@@ -1,0 +1,114 @@
+{
+    "name": "InputMap",
+    "maps": [
+        {
+            "name": "JetEngine",
+            "id": "0b3f0025-fa1d-40d1-97f6-72ede6838c3c",
+            "actions": [
+                {
+                    "name": "throttlerUpHolder",
+                    "type": "Button",
+                    "id": "5d970ffa-06de-4123-a63a-5f361df62d32",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "throttlerDownHold",
+                    "type": "Button",
+                    "id": "f2427a12-a181-4ab7-a2d3-023ddc2ed983",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "throttleStepUp",
+                    "type": "Button",
+                    "id": "2886d3e7-3226-4cae-b418-3f0b6bc2772c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "throttleStepDown",
+                    "type": "Button",
+                    "id": "6ce612f0-d165-4b70-9503-142b1da7f3b3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "tooggleAB",
+                    "type": "Button",
+                    "id": "2e324c96-e7a5-4bc9-badc-b909a50323ab",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4bd7053b-43fc-4833-92b0-0275d0c5418e",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "throttlerUpHolder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "316ef90f-d993-4324-9349-ea52b0e55f08",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "throttlerDownHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "60c5a643-6096-43d6-9de9-926b070171db",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "throttleStepUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "19909f76-1123-45fc-835f-1b7663606d7a",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "throttleStepDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "835984f5-077b-4996-b44e-f88acd83e4a3",
+                    "path": "<Keyboard>/leftAlt",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "tooggleAB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
