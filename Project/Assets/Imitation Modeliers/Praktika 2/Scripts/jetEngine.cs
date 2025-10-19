@@ -77,6 +77,8 @@ public class JetEngine : MonoBehaviour
 
         float dt = Time.fixedDeltaTime;
         
+        
+        
         if (_throttlerUpHolder.IsPressed()) 
             _throttle01 = Mathf.Clamp01(_throttle01 + _throttleRate * dt);
         
@@ -93,6 +95,21 @@ public class JetEngine : MonoBehaviour
             Vector3 force = _nozzle.forward * thrust;
             _rb.AddForceAtPosition(force, _nozzle.position, ForceMode.Impulse);
         }
+    }
+    
+    void OnGUI()
+    {
+        GUIStyle style = new GUIStyle();
+        style.fontSize = 55;
+        GUI.color = Color.black;
+        GUILayout.Label($" ", style);
+        GUILayout.Label($" ", style);
+
+        GUILayout.Label($"AfterBurner: {_afterBurner}", style);
+        GUILayout.Label($"Throttle: {_throttle01:0.0}", style);
+
+
+
     }
 
     

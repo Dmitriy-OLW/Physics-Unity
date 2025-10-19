@@ -24,7 +24,7 @@ public class Glider : MonoBehaviour
     private float _speedMS;
     private float _alphaRad;
 
-    private float CL, CD, gDyn, Lmag, Dmag, glideK;
+    private float _CL, _CD, _gDyn, _Lmag, _Dmag, _glideK;
     
 
     private void Awake()
@@ -49,12 +49,12 @@ public class Glider : MonoBehaviour
         _alphaRad = MathF.Atan2(flowZ, flowX);
 
 
-        CL = _wingCLaplha * _alphaRad;
-        CD = _wingCDO * CL * CL / (Mathf.PI * _wingAspect * 0.85f);
+        _CL = _wingCLaplha * _alphaRad;
+        _CD = _wingCDO * _CL * _CL / (Mathf.PI * _wingAspect * 0.85f);
 
-        gDyn = 0.5f * _airDensity * _speedMS * _speedMS;
-        Lmag = gDyn * _wingArea * CL;
-        Dmag = gDyn * _wingArea * CD;
+        _gDyn = 0.5f * _airDensity * _speedMS * _speedMS;
+        _Lmag = _gDyn * _wingArea * _CL;
+        _Dmag = _gDyn * _wingArea * _CD;
 
         Vector3 Ddir = -flowDir;
         
@@ -62,8 +62,8 @@ public class Glider : MonoBehaviour
         
         liftDir.Normalize();
 
-        Vector3 L = Lmag * liftDir;
-        Vector3 D = Dmag * Ddir;
+        Vector3 L = _Lmag * liftDir;
+        Vector3 D = _Dmag * Ddir;
         
         _rb.AddForceAtPosition(L+D, _wingCP.position, ForceMode.Force);
 
@@ -95,10 +95,12 @@ public class Glider : MonoBehaviour
 
     private void OnGUI()
     {
+        GUIStyle style = new GUIStyle();
+        style.fontSize = 55;
         GUI.color = Color.black;
 
-        GUILayout.Label($"Speed: {_speedMS:0.0} m/s");
-        GUILayout.Label($"Angle atack: {_alphaRad * Mathf.Deg2Rad:0.0} m/s");
+        GUILayout.Label($"Speed: {_speedMS:0.0} m/s", style);
+        GUILayout.Label($"Angle atack: {_alphaRad * Mathf.Rad2Deg:0.0}", style);
 
     }
 }

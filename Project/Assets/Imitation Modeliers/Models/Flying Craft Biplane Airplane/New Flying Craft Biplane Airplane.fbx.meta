@@ -1,9 +1,49 @@
 fileFormatVersion: 2
-guid: b1a3c00125df3134d8e41c2797383db6
+guid: 2c0ab911e5c10a34a96c6f077e2ab2e4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blocker
+    second: {fileID: 2100000, guid: 702274b4870016e4aa18eb0fc0aba6ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: e45625180eaba1f409741a4e6b3bc446, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CockPit
+    second: {fileID: 2100000, guid: fa6489b80304ee64bae57a20c84760ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 0648e3e95f255e347a9fda76091497f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 587b3b01113bcd046b1d9f9fe5a136eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 587b3b01113bcd046b1d9f9fe5a136eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Parts
+    second: {fileID: 2100000, guid: 10f1be1af74450444bed7de4f41ad7f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pilot
+    second: {fileID: 2100000, guid: bd23b756d9bd51d4c9bb99f9b025d580, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,7 +73,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
