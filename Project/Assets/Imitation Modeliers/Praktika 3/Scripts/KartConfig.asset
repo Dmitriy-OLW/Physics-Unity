@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2759406ec62f41378cbaae8fb5fb6e08, type: 3}
+  m_Name: KartConfig
+  m_EditorClassIdentifier: 
+  mass: 200
+  frictionCoefficient: 8
+  frontAxleShare: 0.5
+  maxSteerAngle: 30
+  frontLateralStiffness: 300
+  rearLateralStiffness: 800
+  rollingResistance: 0.5
+  engineTorqueCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 8000
+      inSlope: -22901.914
+      outSlope: -22901.914
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.04000001
+    - serializedVersion: 3
+      time: 1.0033264
+      value: 1000
+      inSlope: -16166.918
+      outSlope: -16166.918
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.039860453
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  engineInertia: 0.2
+  maxRpm: 8000
+  idleRpm: 1000
+  revLimiterRpm: 7500
+  throttleResponse: 5
+  engineFrictionCoeff: 0.02
+  loadTorqueCoeff: 5
+  baseTorque: 500
+  gearRatio: 8
+  drivetrainEfficiency: 0.9
+  wheelRadius: 0.3
+  maxSpeed: 300
+  worldGravity: 9.81
+  handbrakeRearStiffness: 1
+  handbrakeResistanceMultiplier: 100
+  handbrakeLateralMultiplier: 5
