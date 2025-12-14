@@ -1128,9 +1128,9 @@ MonoBehaviour:
   _rearLeftWheel: {fileID: 635478877}
   _rearRightWheel: {fileID: 2018873232}
   _engine: {fileID: 1090965923}
-  _moveActionRef: {fileID: 806619798608967413, guid: 847dab73f9dd59943829695edfa46a7c, type: 3}
-  _handbrakeActionRef: {fileID: 4223338604399965785, guid: 847dab73f9dd59943829695edfa46a7c, type: 3}
-  _respawnActionRef: {fileID: -3995703960163923913, guid: 847dab73f9dd59943829695edfa46a7c, type: 3}
+  _moveActionRef: {fileID: -941813325683189095, guid: 6e13f7a3ba550924692ed636bb9239a8, type: 3}
+  _handbrakeActionRef: {fileID: 1220339568132792718, guid: 6e13f7a3ba550924692ed636bb9239a8, type: 3}
+  _respawnActionRef: {fileID: -3369768070346506989, guid: 6e13f7a3ba550924692ed636bb9239a8, type: 3}
   _showTelemetry: 1
   _groundLayerMask:
     serializedVersion: 2

@@ -15,9 +15,9 @@ MonoBehaviour:
   mass: 200
   frictionCoefficient: 8
   frontAxleShare: 0.5
-  maxSteerAngle: 30
-  frontLateralStiffness: 300
-  rearLateralStiffness: 800
+  maxSteerAngle: 50
+  frontLateralStiffness: 2000
+  rearLateralStiffness: 1000
   rollingResistance: 0.5
   engineTorqueCurve:
     serializedVersion: 2
