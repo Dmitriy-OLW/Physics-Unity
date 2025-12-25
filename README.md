@@ -13,4 +13,7 @@ Scripts - "Imitation-Modeliers\Project\Assets\Imitation Modeliers\Praktika 2\Scr
 Praktika №3 : </p>
 Scene - "Imitation-Modeliers\Project\Assets\Imitation Modeliers\Praktika 3\Car.unity"</p>
 Scripts - "Imitation-Modeliers\Project\Assets\Imitation Modeliers\Praktika 3\Scripts"</p>
-
+<br>
+Praktika №4 : </p>
+Scene - "Imitation-Modeliers\Project\Assets\Imitation Modeliers\Praktika 4\Bolide.unity"</p>
+Scripts - "Imitation-Modeliers\Project\Assets\Imitation Modeliers\Praktika 4\Scripts"</p>
