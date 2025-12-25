@@ -297,7 +297,7 @@ public partial class @InputActionMapCar: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""dbc14636-05c0-422d-887f-d7d36be01242"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

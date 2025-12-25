@@ -4,8 +4,8 @@ namespace Kart
 {
     public class KartEngine : MonoBehaviour
     {
-        [Header("Configuration")] [SerializeField]
-        private KartConfig _config;
+        [Header("Configuration")] 
+        [SerializeField] private KartConfig _config;
         
         private float _idleRpm = 1000f;
         private float _maxRpm = 8000f;
@@ -16,13 +16,13 @@ namespace Kart
         private float _engineFrictionCoeff = 0.02f;
         private float _loadTorqueCoeff = 5f;
         private float _baseTorque = 500f;
+        
+        private float _invInertiaFactor;
 
         public float CurrentRpm { get; private set; }
         public float CurrentTorque { get; private set; }
         public float SmoothedThrottle { get; private set; }
         public float RevLimiterFactor { get; private set; } = 1f;
-
-        private float _invInertiaFactor;
 
         private void Awake()
         {
@@ -52,11 +52,6 @@ namespace Kart
             UpdateInertiaFactor();
         }
 
-        private void UpdateInertiaFactor()
-        {
-            _invInertiaFactor = 60f / (2f * Mathf.PI * Mathf.Max(_flywheelInertia, 0.0001f));
-        }
-
         public float Simulate(float throttleInput, float forwardSpeed, float deltaTime)
         {
             float targetThrottle = Mathf.Clamp01(throttleInput);
@@ -81,6 +76,11 @@ namespace Kart
 
             CurrentTorque = driveTorque;
             return CurrentTorque;
+        }
+        
+        private void UpdateInertiaFactor()
+        {
+            _invInertiaFactor = 60f / (2f * Mathf.PI * Mathf.Max(_flywheelInertia, 0.0001f));
         }
         
         private float GetTorqueFromCurve(float rpm)

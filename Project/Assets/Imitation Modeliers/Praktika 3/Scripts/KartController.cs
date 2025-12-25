@@ -6,27 +6,27 @@ namespace Kart
     [RequireComponent(typeof(Rigidbody))]
     public class KartController : MonoBehaviour
     {
-        [Header("Configuration")] [SerializeField]
-        private KartConfig _config;
+        [Header("Configuration")] 
+        [SerializeField] private KartConfig _config;
 
-        [Header("Wheel attachment points")] [SerializeField]
-        private Transform _frontLeftWheel;
+        [Header("Wheel attachment points")] 
+        [SerializeField] private Transform _frontLeftWheel;
 
         [SerializeField] private Transform _frontRightWheel;
         [SerializeField] private Transform _rearLeftWheel;
         [SerializeField] private Transform _rearRightWheel;
 
-        [Header("Engine & drivetrain")] [SerializeField]
-        private KartEngine _engine;
+        [Header("Engine & drivetrain")] 
+        [SerializeField] private KartEngine _engine;
 
-        [Header("Input")] [SerializeField]
-        private InputActionReference _moveActionRef;
+        [Header("Input")] 
+        [SerializeField] private InputActionReference _moveActionRef;
 
         [SerializeField] private InputActionReference _handbrakeActionRef;
         [SerializeField] private InputActionReference _respawnActionRef;
 
-        [Header("Telemetry")] [SerializeField] 
-        private bool _showTelemetry = true;
+        [Header("Telemetry")] 
+        [SerializeField] private bool _showTelemetry = true;
         
         [Header("Ground Detection")]
         [SerializeField] private LayerMask _groundLayerMask = 1;
@@ -74,9 +74,7 @@ namespace Kart
             _rb = GetComponent<Rigidbody>();
             
             if (_config != null)
-            {
                 ApplyConfig(_config);
-            }
 
             InitializeWheelData();
         }
@@ -109,10 +107,8 @@ namespace Kart
             _handbrakeLateralMultiplier = config.handbrakeLateralMultiplier;
             
             if (_engine != null)
-            {
                 _engine.ApplyConfig(config);
-            }
-            
+
             ComputeStaticWheelLoads();
         }
 
