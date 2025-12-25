@@ -1,6 +1,3 @@
-using System;
-using Unity.Android.Gradle.Manifest;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace IMP{
